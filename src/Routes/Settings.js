@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import allActions from "../Store/Actions";
 import { useSelector, useDispatch } from "react-redux";
 import styled from "styled-components";
@@ -58,14 +58,6 @@ const Settings = () => {
       dispatch(allActions.themeActions.changeLight());
     }
   };
-
-  useEffect(() => {
-    const lsTheme = window.localStorage.getItem("theme");
-    if (lsTheme) {
-      if (lsTheme === "light") dispatch(allActions.themeActions.changeLight());
-      else dispatch(allActions.themeActions.changeDark());
-    }
-  }, []);
 
   return (
     <Container>
