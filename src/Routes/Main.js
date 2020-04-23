@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import allActions from "../Store/Actions";
 
@@ -9,10 +9,20 @@ const Main = () => {
   const handleClick = () => {
     if (theme === "light") {
       dispatch(allActions.themeActions.changeDark());
+      window.localStorage.setItem("theme", "dark");
     } else {
       dispatch(allActions.themeActions.changeLight());
+      window.localStorage.setItem("theme", "light");
     }
   };
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    if (localTheme) {
+      if (localTheme == "light")
+        dispatch(allActions.themeActions.changeLight());
+      else dispatch(allActions.themeActions.changeDark());
+    }
+  }, []);
   console.log(theme);
   return (
     <div>
