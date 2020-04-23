@@ -5,15 +5,14 @@ import styled from "styled-components";
 const Container = styled.div`
   font-family: "Poor Story", cursive;
   width: 100vw;
-  height: 100px;
+  height: 120px;
   display: flex;
   align-items: center;
-  border: 2px solid black;
-  padding-left: 20px;
+  padding-left: 30px;
 `;
 
 const SLink = styled(Link)`
-  margin-right: 50px;
+  margin-right: 30px;
   height: 50%;
   display: flex;
   align-items: center;
@@ -23,7 +22,7 @@ const SLink = styled(Link)`
 `;
 
 const Item = styled.div`
-  padding: 5px;
+  padding: 10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -34,13 +33,15 @@ const Item = styled.div`
     border-radius: 3px;
   }
   transition: all 0.25s linear;
-  font-size: 24px;
+  font-size: 22px;
+  color: ${({ theme }) => theme.text};
 `;
 
 const Logo = styled.div`
   font-family: D2Coding, sans-serif;
   font-size: 40px;
   font-weight: 700;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default withRouter(({ location: { pathname } }) => {
