@@ -6,7 +6,7 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 10vh 20vh;
+  padding: 8vh 10vw;
   display: flex;
   justify-content: center;
 `;
