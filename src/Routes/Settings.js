@@ -6,14 +6,14 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  padding: 100px 200px;
+  padding: 10vh 20vh;
   display: flex;
   justify-content: center;
 `;
 
 const Content = styled.div`
   font-size: 24px;
-  width: 80%;
+  width: 700px;
   height: 50px;
   padding: 0 10px;
   display: flex;

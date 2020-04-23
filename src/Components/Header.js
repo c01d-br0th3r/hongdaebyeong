@@ -8,33 +8,40 @@ const Container = styled.div`
   height: 120px;
   display: flex;
   align-items: center;
-  padding-left: 30px;
+  padding: 0 30px;
+  .qna {
+    margin-right: auto;
+  }
 `;
 
 const SLink = styled(Link)`
-  margin-right: 30px;
+  margin-right: 25px;
   height: 50%;
   display: flex;
   align-items: center;
   &:nth-child(1) {
-    margin-right: 50px;
+    margin-right: 60px;
   }
 `;
 
 const Item = styled.div`
-  padding: 10px;
-  width: 100%;
+  padding: 10px 0px;
+  width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   &:not(.logo) {
     border-bottom: 3px solid
       ${(props) => (props.current ? "#00b894" : "transparent")};
-    border-radius: 3px;
   }
   transition: all 0.25s linear;
   font-size: 22px;
   color: ${({ theme }) => theme.text};
+  &:hover {
+    font-size: 25px;
+    color: #00b894;
+  }
+  transition: all 0.2s linear;
 `;
 
 const Logo = styled.div`
@@ -53,7 +60,7 @@ export default withRouter(({ location: { pathname } }) => {
       <SLink to="/main">
         <Item current={pathname === "/main"}>트렌드</Item>
       </SLink>
-      <SLink to="/qna">
+      <SLink className="qna" to="/qna">
         <Item current={pathname === "/qna"}>Q&A</Item>
       </SLink>
       <SLink to="/settings">
