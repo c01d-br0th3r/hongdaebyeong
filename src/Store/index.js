@@ -4,8 +4,7 @@ import allActions from "./Actions";
 
 function* workerSaga() {
   try {
-    const { images } = yield call(getImages);
-    console.log(images);
+    const { data: images } = yield call(getImages);
     yield put(allActions.imagesActions.successFetchImages(images));
   } catch (e) {
     yield put(allActions.imagesActions.failFetchImages(e));

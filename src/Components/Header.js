@@ -7,8 +7,8 @@ const Container = styled.div`
   width: 100vw;
   height: 120px;
   display: flex;
-  align-items: center;
   padding: 0 30px;
+  align-items: center;
   .qna {
     margin-right: auto;
   }
