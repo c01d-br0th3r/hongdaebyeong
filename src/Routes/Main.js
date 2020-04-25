@@ -39,12 +39,17 @@ const Main = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    return () => {
+      dispatch(allActions.imagesActions.cleanupImages());
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
     dispatch(allActions.imagesActions.fetchImages());
   }, [flag]);
 
+  console.log(images.loading);
   return (
     <Container>
       {images.loading ? (

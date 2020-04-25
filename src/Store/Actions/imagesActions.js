@@ -18,4 +18,15 @@ const failFetchImages = (error) => {
   };
 };
 
-export default { fetchImages, successFetchImages, failFetchImages };
+const cleanupImages = () => {
+  return {
+    type: "CLEAN_UP_IMAGES",
+  };
+};
+
+export default {
+  fetchImages,
+  successFetchImages,
+  failFetchImages,
+  cleanupImages,
+};

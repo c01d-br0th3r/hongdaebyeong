@@ -12,6 +12,13 @@ const images = (state = { loading: true, images: [], error: null }, action) => {
         loading: false,
         error: action.error,
       };
+    case "CLEAN_UP_IMAGES":
+      return {
+        ...state,
+        loading: true,
+        images: [],
+        error: null,
+      };
     default:
       return state;
   }
