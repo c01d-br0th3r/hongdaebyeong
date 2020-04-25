@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   margin-top: 20px;
-  width: 400px;
+  width: 380px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +53,6 @@ const Hashtag = styled.span`
 `;
 
 const Cards = ({ id, width, height, url }) => {
-  console.log(id, width, height, url);
   return (
     <Container className={`cards-${Math.ceil(height / width)} cards`}>
       <Name>{id}</Name>
