@@ -9,6 +9,9 @@ export const lightTheme = {
   circleColor: "#636e72",
   boxShadow: "0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);",
   //boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);",
+  borderColor: "rgba(205, 205, 205, 0.9)",
+  cardBody: "#E2E2E2",
+  hoverColor: "#f2fcf9",
 };
 
 export const darkTheme = {
@@ -20,7 +23,8 @@ export const darkTheme = {
   togglePosition: "19px",
   toggleBox: "#81ecec",
   circleColor: "#00cec9",
-  boxShadow:
-    "0 4px 6px rgba(205, 205, 160, 0.11), 0 1px 3px rgba(255, 255, 255, 0.08);",
+  boxShadow: "0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);",
   //boxShadow: "0 3px 6px rgba(255, 255, 255, 0.16), 0 3px 6px rgba(255, 255, 255, 0.23);",
+  borderColor: "rgba(44, 44, 44, 0.9)",
+  hoverColor: "#323837",
 };

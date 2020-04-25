@@ -49,7 +49,6 @@ const Main = () => {
     dispatch(allActions.imagesActions.fetchImages());
   }, [flag]);
 
-  console.log(images.loading);
   return (
     <Container>
       {images.loading ? (
