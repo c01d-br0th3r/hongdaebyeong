@@ -8,7 +8,7 @@ import Settings from "../Routes/Settings";
 export default () => (
   <Router>
     <Header />
-    <Route exact path="/main" component={Main} />
+    <Route path="/" component={Main} />
     <Route exact path="/qna" component={QnA} />
     <Route exact path="/settings" component={Settings} />
   </Router>
