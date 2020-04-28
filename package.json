@@ -28,6 +28,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://focused-golick-a62fd4.netlify.app/#/",
   "browserslist": {
     "production": [
       ">0.2%",
