@@ -1,0 +1,2 @@
+.grid{width:100%;display:grid;justify-content:center;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));grid-gap:5px 5px;gap:5px 5px;grid-auto-flow:dense;align-items:stretch}.cards{position:relative}.cards-1{grid-row:span 1}.cards-2{grid-row:span 2}.cards-3{grid-row:span 3}.cards-4{grid-row:span 4}.cards-5{grid-row:span 5}.card-1{width:335px;height:260px}.card-2{width:335px;height:500px}.card-3{width:335px;height:760px}.card-4{width:335px;height:1020px}.card-5{width:335px;height:1280px}
+/*# sourceMappingURL=main.69e65df4.chunk.css.map */

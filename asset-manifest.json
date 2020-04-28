@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hongdaebyeong/static/css/main.69e65df4.chunk.css",
+    "main.js": "/hongdaebyeong/static/js/main.cddc2df8.chunk.js",
+    "main.js.map": "/hongdaebyeong/static/js/main.cddc2df8.chunk.js.map",
+    "runtime-main.js": "/hongdaebyeong/static/js/runtime-main.7ea42115.js",
+    "runtime-main.js.map": "/hongdaebyeong/static/js/runtime-main.7ea42115.js.map",
+    "static/js/2.e9f59537.chunk.js": "/hongdaebyeong/static/js/2.e9f59537.chunk.js",
+    "static/js/2.e9f59537.chunk.js.map": "/hongdaebyeong/static/js/2.e9f59537.chunk.js.map",
+    "index.html": "/hongdaebyeong/index.html",
+    "precache-manifest.f53bdc11b97ff8cd00bc193e4245672a.js": "/hongdaebyeong/precache-manifest.f53bdc11b97ff8cd00bc193e4245672a.js",
+    "service-worker.js": "/hongdaebyeong/service-worker.js",
+    "static/css/main.69e65df4.chunk.css.map": "/hongdaebyeong/static/css/main.69e65df4.chunk.css.map",
+    "static/js/2.e9f59537.chunk.js.LICENSE.txt": "/hongdaebyeong/static/js/2.e9f59537.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ea42115.js",
+    "static/js/2.e9f59537.chunk.js",
+    "static/css/main.69e65df4.chunk.css",
+    "static/js/main.cddc2df8.chunk.js"
+  ]
+}
