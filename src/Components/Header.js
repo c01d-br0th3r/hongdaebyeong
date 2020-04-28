@@ -54,11 +54,11 @@ const Logo = styled.div`
 export default withRouter(({ location: { pathname } }) => {
   return (
     <Container>
-      <SLink className="logo" to="/main">
+      <SLink className="logo" to="/">
         <Logo>logo Image</Logo>
       </SLink>
-      <SLink to="/main">
-        <Item current={pathname === "/main"}>트렌드</Item>
+      <SLink to="/">
+        <Item current={pathname === "/"}>트렌드</Item>
       </SLink>
       <SLink className="qna" to="/qna">
         <Item current={pathname === "/qna"}>Q&A</Item>
