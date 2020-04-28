@@ -2,7 +2,7 @@
   "name": "hongdaebyeong",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://focused-golick-a62fd4.netlify.app/",
+  "homepage": "https://focused-golick-a62fd4.netlify.app/#/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -25,8 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "yarn run build&&gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
