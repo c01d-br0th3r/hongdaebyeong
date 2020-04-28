@@ -2,7 +2,7 @@
   "name": "hongdaebyeong",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://c01d-br0th3r.github.io/hongdaebyeong",
+  "homepage": "https://focused-golick-a62fd4.netlify.app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
