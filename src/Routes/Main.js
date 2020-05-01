@@ -20,7 +20,7 @@ const Main = () => {
   // 여기서 데이터를 받아서 Cards 컴포넌트에 props로 넘긴다.
   const images = useSelector((state) => state.images);
   const dispatch = useDispatch();
-  const [flag, setFlag] = useState(0);
+  const [page, setPage] = useState(0);
 
   const handleScroll = () => {
     let clientHeight = document.documentElement.clientHeight;
@@ -33,7 +33,7 @@ const Main = () => {
       document.body.scrollHeight
     );
     if (clientHeight + scrollTop === scrollHeight) {
-      setFlag((flag) => flag + 1);
+      setPage((page) => page + 1);
     }
   };
 
@@ -47,7 +47,7 @@ const Main = () => {
 
   useEffect(() => {
     dispatch(allActions.imagesActions.fetchImages());
-  }, [flag]);
+  }, [page]);
 
   return (
     <Container>
