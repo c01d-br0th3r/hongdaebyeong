@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import styled from "styled-components";
+import Intro from "../Components/Intro";
 
 const QnA = () => {
-  return <div>This is QnA Page.</div>;
+  return (
+    <>
+      <Intro />
+    </>
+  );
 };
 
 export default QnA;

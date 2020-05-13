@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import Dropmenu from "./Dropmenu";
 
 const Container = styled.div`
   font-family: "Poor Story", cursive;
@@ -66,6 +67,7 @@ export default withRouter(({ location: { pathname } }) => {
       <SLink to="/settings">
         <Item current={pathname === "/settings"}>설정</Item>
       </SLink>
+      <Dropmenu />
     </Container>
   );
 });
